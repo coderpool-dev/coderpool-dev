@@ -2,35 +2,48 @@
 
 **PHP Backend Developer · Laravel / Symfony · 6+ лет коммерческого опыта**
 
-Разрабатываю API и веб-сервисы: платежи, очереди, интеграции и realtime. Беру на себя весь цикл — от схемы базы данных до запуска и поддержки в production.
+Проектирую и довожу до production API и веб-сервисы: платежи, очереди, интеграции и realtime. Отвечаю за весь цикл — схема базы данных, код, тесты, CI/CD, деплой и поддержка.
 
 [Telegram ↗](https://t.me/coderpool) · [Email ↗](mailto:cyrillnetyosov@yandex.ru)
 
-## GoydaCord
+## GoydaCord — голосовой мессенджер
 
-Голосовой мессенджер с чатами, серверами, звонками и демонстрацией экрана. Мой основной проект: разрабатываю бэкенд на Laravel, веб-клиент на Next.js и приложение на Electron.
+Чаты, серверы, звонки и демонстрация экрана. Основной проект: бэкенд на Laravel, веб-клиент на Next.js, приложение на Electron.
 
 [**Открыть демо →**](https://goidacord.ru) · [Исходный код](https://github.com/coderpool-dev/goydacord-api) · [Архитектура](https://goidacord.ru/tech)
 
 [![Интерфейс GoydaCord: чаты и голосовые каналы](https://raw.githubusercontent.com/coderpool-dev/goydacord-api/main/docs/screenshots/app-demo.webp)](https://goidacord.ru)
 
-В бэкенде — API с авторизацией по устройствам, иерархия ролей и права каналов, события через Reverb, голосовые комнаты на LiveKit и загрузка файлов с докачкой. Бизнес-логика вынесена в сервисы; для проверки — PHPUnit и PHPStan/Larastan.
+- Авторизация по устройствам, иерархия ролей и права на уровне каналов
+- События в реальном времени через Laravel Reverb, голосовые комнаты на LiveKit
+- Загрузка файлов с докачкой
+- Бизнес-логика в сервисах; PHPUnit и PHPStan/Larastan
 
 `PHP 8.3` · `Laravel 12` · `MySQL` · `Redis` · `WebSocket` · `LiveKit`
 
-## Другие проекты
+## PREPISKA DayZ Launcher — Symfony-бэкенд и Windows-клиент
 
-**[PREPISKA DayZ Launcher ↗](https://github.com/coderpool-dev/dayz_launcher)**
+Сервис для игроков DayZ: каталог ~20 тыс. серверов, админка со статистикой и выпуском обновлений, клиент для Windows.
 
-Лаунчер для Windows: поиск серверов, загрузка модов через Steam Workshop и запуск игры. Клиент на C# / .NET 8 с WebView2, API на PHP; тесты и выпуск установщика через GitHub Actions.
+[Сайт](https://dayz.goidacord.ru) · [Исходный код](https://github.com/coderpool-dev/dayz_launcher)
+
+- **Symfony 7.4 LTS, Doctrine, EasyAdmin:** API, админка со статистикой использования, управлением спонсорскими серверами и загрузкой новых версий
+- **Производительность:** список серверов из внешних источников обновляется по cron под блокировкой, при недоступности источника отдаётся последний удачный снимок. Готовый ответ собирается раз в минуту и отдаётся файлом — раньше каждый запрос декодировал ~20 МБ JSON и упирался в лимит памяти PHP-FPM
+- **Телеметрия клиентов** с rate limiting; **автообновление** с проверкой SHA-256
+- Перенос с процедурного PHP на Symfony без изменения контракта API для уже установленных клиентов
+- 28 тестов PHPUnit + 46 xUnit, CI в GitHub Actions, сборка и публикация установщика по git-тегу
+
+`PHP 8.4` · `Symfony 7.4` · `Doctrine` · `EasyAdmin` · `C# / .NET 8` · `GitHub Actions`
 
 [![Главный экран PREPISKA DayZ Launcher](https://raw.githubusercontent.com/coderpool-dev/dayz_launcher/main/docs/screenshots/01-home.png)](https://github.com/coderpool-dev/dayz_launcher)
 
-**[Сайт университета на Joomla ↗](https://github.com/coderpool-dev/joomla-university-website)**
+## Коммерческий опыт
 
-Миграция Joomla 3 → 4, доработка модулей и интеграция заявок с Telegram. В публичной версии — структура проекта и примеры настройки Nginx, PHP-FPM и MySQL без данных организации.
+- Сократил время формирования отчётов с **10 до 1,5 секунды** на таблицах с миллионами записей
+- Интегрировал платёжные системы
+- Вынес обработку документов в очереди
 
-## С чем работаю
+## Стек
 
 **Backend:** PHP, Laravel, Symfony, Yii2, REST API
 
@@ -38,8 +51,6 @@
 
 **Качество и инфраструктура:** PHPUnit, PHPStan, Docker, Linux, Nginx, CI/CD
 
-В коммерческих проектах интегрировал платёжные системы, выносил обработку документов в очереди и оптимизировал SQL. Один из результатов — сокращение времени формирования отчётов с **10 до 1,5 секунды** на таблицах с миллионами записей.
-
 ---
 
-Открыт к предложениям по PHP backend-разработке. Работаю удалённо; офис или гибрид — Москва и Санкт-Петербург. **[Написать в Telegram →](https://t.me/coderpool)**
+Открыт к предложениям по PHP backend-разработке. Удалённо; офис или гибрид — Москва и Санкт-Петербург. **[Написать в Telegram →](https://t.me/coderpool)**

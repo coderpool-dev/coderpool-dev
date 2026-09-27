@@ -24,6 +24,8 @@
 
 Лаунчер для Windows: поиск серверов, загрузка модов через Steam Workshop и запуск игры. Клиент на C# / .NET 8 с WebView2, API на PHP; тесты и выпуск установщика через GitHub Actions.
 
+[![Главный экран PREPISKA DayZ Launcher](https://raw.githubusercontent.com/coderpool-dev/dayz_launcher/main/docs/screenshots/01-home.png)](https://github.com/coderpool-dev/dayz_launcher)
+
 **[Сайт университета на Joomla ↗](https://github.com/coderpool-dev/joomla-university-website)**
 
 Миграция Joomla 3 → 4, доработка модулей и интеграция заявок с Telegram. В публичной версии — структура проекта и примеры настройки Nginx, PHP-FPM и MySQL без данных организации.

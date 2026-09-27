@@ -1,64 +1,43 @@
 # Кирилл Нетесов
 
-**Backend-разработчик PHP · Laravel · Symfony · 6+ лет коммерческого опыта**
+**PHP Backend Developer · Laravel / Symfony · 6+ лет коммерческого опыта**
 
-Разрабатываю API, сервисы обработки данных и веб-приложения. Работаю с платежами, очередями, интеграциями и realtime. Веду задачи от проектирования базы данных до тестов, развёртывания и поддержки в production.
+Разрабатываю API и веб-сервисы: платежи, очереди, интеграции и realtime. Беру на себя весь цикл — от схемы базы данных до запуска и поддержки в production.
 
-[Telegram](https://t.me/coderpool) · [Email](mailto:cyrillnetyosov@yandex.ru) · [GoydaCord](https://goidacord.ru)
+[Telegram ↗](https://t.me/coderpool) · [Email ↗](mailto:cyrillnetyosov@yandex.ru)
 
-## Проекты
+## GoydaCord
 
-### [GoydaCord API](https://github.com/coderpool-dev/goydacord-api)
+Голосовой мессенджер с чатами, серверами, звонками и демонстрацией экрана. Мой основной проект: разрабатываю бэкенд на Laravel, веб-клиент на Next.js и приложение на Electron.
 
-Бэкенд голосового мессенджера с личными чатами, серверами, ролями, голосовыми каналами и файлообменом. Отвечаю за бэкенд и разрабатываю веб- и десктоп-клиенты.
+[**Открыть демо →**](https://goidacord.ru) · [Исходный код](https://github.com/coderpool-dev/goydacord-api) · [Архитектура](https://goidacord.ru/tech)
 
-- REST API на Laravel 12: Sanctum, сессии по устройствам, сервисный слой, policies и API Resources.
-- Сообщения и статусы присутствия через Laravel Reverb; голосовые комнаты на LiveKit, TURN/STUN на coturn.
-- Иерархия ролей, права отдельных каналов и серверная модерация голосовых комнат.
-- Загрузка файлов частями с докачкой, проверкой смещения и защитой от параллельной записи; потоковая отдача с поддержкой HTTP Range.
-- Feature- и unit-тесты на PHPUnit, статический анализ PHPStan/Larastan, проверка стиля Laravel Pint.
+[![Интерфейс GoydaCord: чаты и голосовые каналы](https://raw.githubusercontent.com/coderpool-dev/goydacord-api/main/docs/screenshots/app-demo.webp)](https://goidacord.ru)
 
-**Стек:** PHP 8.3, Laravel 12, MySQL, Redis, Reverb, LiveKit. Клиенты — Next.js, TypeScript и Electron.
+В бэкенде — API с авторизацией по устройствам, иерархия ролей и права каналов, события через Reverb, голосовые комнаты на LiveKit и загрузка файлов с докачкой. Бизнес-логика вынесена в сервисы; для проверки — PHPUnit и PHPStan/Larastan.
 
-[Попробовать демо](https://goidacord.ru) · [Архитектура](https://goidacord.ru/tech) · [Код](https://github.com/coderpool-dev/goydacord-api)
+`PHP 8.3` · `Laravel 12` · `MySQL` · `Redis` · `WebSocket` · `LiveKit`
 
-### [PREPISKA DayZ Launcher](https://github.com/coderpool-dev/dayz_launcher)
+## Другие проекты
 
-Лаунчер для Windows: поиск серверов DayZ, подготовка модов и запуск игры с нужными параметрами.
+**[PREPISKA DayZ Launcher ↗](https://github.com/coderpool-dev/dayz_launcher)**
 
-- PHP API собирает, нормализует и кэширует список серверов.
-- Клиент получает список модов через API и A2S, проверяет их наличие и управляет подписками Steam Workshop.
-- Интерфейс на HTML/CSS/JavaScript работает внутри WebView2; взаимодействие со Steam вынесено в отдельный процесс.
-- Тесты на xUnit, сборка и выпуск установщика через GitHub Actions.
+Лаунчер для Windows: поиск серверов, загрузка модов через Steam Workshop и запуск игры. Клиент на C# / .NET 8 с WebView2, API на PHP; тесты и выпуск установщика через GitHub Actions.
 
-**Стек:** C#, .NET 8, WinForms, WebView2, Steamworks, PHP 8.
+**[Сайт университета на Joomla ↗](https://github.com/coderpool-dev/joomla-university-website)**
 
-### [Сайт университета на Joomla](https://github.com/coderpool-dev/joomla-university-website)
+Миграция Joomla 3 → 4, доработка модулей и интеграция заявок с Telegram. В публичной версии — структура проекта и примеры настройки Nginx, PHP-FPM и MySQL без данных организации.
 
-Публичная портфолио-версия проекта: перенос сайта и подготовка окружения на Nginx, PHP-FPM и MySQL. В репозитории — структура сайта, пример конфигурации и заметки по развёртыванию. Данные и материалы организации исключены из публикации.
+## С чем работаю
 
-В рамках работы над порталом мигрировал Joomla 3 → 4, дорабатывал модули расписания и обратной связи, подключал заявки и уведомления об ошибках к Telegram.
+**Backend:** PHP, Laravel, Symfony, Yii2, REST API
 
-## Коммерческий опыт
+**Данные и очереди:** MySQL, PostgreSQL, Redis, RabbitMQ, Kafka
 
-- **Производительность.** В корпоративной системе документооборота ускорил формирование отчётов с 10 до 1,5 секунды на таблицах с миллионами записей: оптимизировал SQL, добавил индексы и кэширование в Redis.
-- **Очереди и микросервисы.** Участвовал в переносе модуля с Laravel на сервисы Symfony. Настраивал RabbitMQ с подтверждениями доставки и dead-letter очередью, Kafka-консьюмеры для фоновой обработки XML и Excel.
-- **Платежи.** Интегрировал ЮKassa, QIWI и Antilopay: проверка подписи webhook, идемпотентная обработка, статусы, сверка и возвраты.
-- **Интеграции и поддержка.** Работал с Telegram Bot API, Twitch OAuth/Helix и REST-обменом с 1С-Битрикс. Обновлял PHP и фреймворки, дорабатывал проекты на Yii2 и Joomla.
+**Качество и инфраструктура:** PHPUnit, PHPStan, Docker, Linux, Nginx, CI/CD
 
-## Технологии
+В коммерческих проектах интегрировал платёжные системы, выносил обработку документов в очереди и оптимизировал SQL. Один из результатов — сокращение времени формирования отчётов с **10 до 1,5 секунды** на таблицах с миллионами записей.
 
-| Направление | Инструменты |
-| --- | --- |
-| Backend | PHP, Laravel, Symfony, Yii2, REST API, WebSocket |
-| Данные | MySQL, PostgreSQL, MongoDB, Redis |
-| Очереди | Laravel Queues, RabbitMQ, Apache Kafka |
-| Качество | PHPUnit, PHPStan / Larastan, Laravel Pint |
-| Инфраструктура | Docker, Linux, Nginx, PHP-FPM, GitHub Actions, Git |
-| Клиентская разработка | Vue 3, React, Next.js, TypeScript, Electron |
+---
 
-## Связь
-
-Обсудить проект или работу: **[@coderpool](https://t.me/coderpool)** или **[cyrillnetyosov@yandex.ru](mailto:cyrillnetyosov@yandex.ru)**.
-
-Работаю удалённо; рассматриваю офис и гибрид в Москве и Санкт-Петербурге. Английский — B2.
+Открыт к предложениям по PHP backend-разработке. Работаю удалённо; офис или гибрид — Москва и Санкт-Петербург. **[Написать в Telegram →](https://t.me/coderpool)**

@@ -1,62 +1,64 @@
-# Привет! Я Кирилл 👋
+# Кирилл Нетесов
 
-**Backend-разработчик PHP** · Laravel · Symfony · 6+ лет коммерческого опыта
+**Backend-разработчик PHP · Laravel · Symfony · 6+ лет коммерческого опыта**
 
-Беру задачу целиком: от проектирования БД и API до тестов, деплоя и поддержки в production.
+Разрабатываю API, сервисы обработки данных и веб-приложения. Работаю с платежами, очередями, интеграциями и realtime. Веду задачи от проектирования базы данных до тестов, развёртывания и поддержки в production.
 
-## 🚀 Сейчас
+[Telegram](https://t.me/coderpool) · [Email](mailto:cyrillnetyosov@yandex.ru) · [GoydaCord](https://goidacord.ru)
 
-Делаю **[GoydaCord](https://goidacord.ru)** — голосовой мессенджер с чатами, групповыми звонками, демонстрацией экрана и файлообменом. Работает в браузере и как десктоп-приложение под Windows. Отвечаю за бэкенд целиком и разрабатываю клиенты.
+## Проекты
 
-- REST API на Laravel 12 / PHP 8.3, авторизация через Sanctum, документация в OpenAPI
-- Realtime на Laravel Reverb: сообщения, индикатор набора, статусы онлайн
-- Групповые звонки на WebRTC + собственный TURN-сервер (Coturn)
-- Загрузка больших файлов по частям с докачкой и шифрованием AES-256-GCM
-- Веб-клиент на Next.js + TypeScript, десктоп на Electron с автообновлением
+### [GoydaCord API](https://github.com/coderpool-dev/goydacord-api)
 
-📦 Бэкенд: [goydacord-api](https://github.com/coderpool-dev/goydacord-api)
+Бэкенд голосового мессенджера с личными чатами, серверами, ролями, голосовыми каналами и файлообменом. Отвечаю за бэкенд и разрабатываю веб- и десктоп-клиенты.
 
-## 🛠 Стек
+- REST API на Laravel 12: Sanctum, сессии по устройствам, сервисный слой, policies и API Resources.
+- Сообщения и статусы присутствия через Laravel Reverb; голосовые комнаты на LiveKit, TURN/STUN на coturn.
+- Иерархия ролей, права отдельных каналов и серверная модерация голосовых комнат.
+- Загрузка файлов частями с докачкой, проверкой смещения и защитой от параллельной записи; потоковая отдача с поддержкой HTTP Range.
+- Feature- и unit-тесты на PHPUnit, статический анализ PHPStan/Larastan, проверка стиля Laravel Pint.
 
-**Backend**
+**Стек:** PHP 8.3, Laravel 12, MySQL, Redis, Reverb, LiveKit. Клиенты — Next.js, TypeScript и Electron.
 
-![PHP](https://img.shields.io/badge/PHP_8.3-777BB4?style=flat-square&logo=php&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
-![Symfony](https://img.shields.io/badge/Symfony-000000?style=flat-square&logo=symfony&logoColor=white)
-![Yii2](https://img.shields.io/badge/Yii2-40B3D8?style=flat-square&logo=yii&logoColor=white)
-![PHPUnit](https://img.shields.io/badge/PHPUnit-3C9CD7?style=flat-square&logo=php&logoColor=white)
+[Попробовать демо](https://goidacord.ru) · [Архитектура](https://goidacord.ru/tech) · [Код](https://github.com/coderpool-dev/goydacord-api)
 
-**Базы данных и очереди**
+### [PREPISKA DayZ Launcher](https://github.com/coderpool-dev/dayz_launcher)
 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
-![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+Лаунчер для Windows: поиск серверов DayZ, подготовка модов и запуск игры с нужными параметрами.
 
-**Инфраструктура**
+- PHP API собирает, нормализует и кэширует список серверов.
+- Клиент получает список модов через API и A2S, проверяет их наличие и управляет подписками Steam Workshop.
+- Интерфейс на HTML/CSS/JavaScript работает внутри WebView2; взаимодействие со Steam вынесено в отдельный процесс.
+- Тесты на xUnit, сборка и выпуск установщика через GitHub Actions.
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+**Стек:** C#, .NET 8, WinForms, WebView2, Steamworks, PHP 8.
 
-**Frontend**
+### [Сайт университета на Joomla](https://github.com/coderpool-dev/joomla-university-website)
 
-![Vue](https://img.shields.io/badge/Vue_3-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)
+Публичная портфолио-версия проекта: перенос сайта и подготовка окружения на Nginx, PHP-FPM и MySQL. В репозитории — структура сайта, пример конфигурации и заметки по развёртыванию. Данные и материалы организации исключены из публикации.
 
-## 💼 С чем работаю лучше всего
+В рамках работы над порталом мигрировал Joomla 3 → 4, дорабатывал модули расписания и обратной связи, подключал заявки и уведомления об ошибках к Telegram.
 
-- **Платежи** — ЮKassa, QIWI, Antilopay: webhook с проверкой подписи, идемпотентность, статусы, сверка, возвраты
-- **Очереди и микросервисы** — RabbitMQ с dead-letter очередями, Kafka-консьюмеры, повторные попытки доставки
-- **Интеграции** — Telegram Bot API, Twitch (OAuth, Helix), сервисы Яндекса, REST-обмен с 1С-Битрикс
-- **Легаси** — обновление PHP и фреймворков, рефакторинг без остановки работающих проектов
+## Коммерческий опыт
 
-## 📫 Связь
+- **Производительность.** В корпоративной системе документооборота ускорил формирование отчётов с 10 до 1,5 секунды на таблицах с миллионами записей: оптимизировал SQL, добавил индексы и кэширование в Redis.
+- **Очереди и микросервисы.** Участвовал в переносе модуля с Laravel на сервисы Symfony. Настраивал RabbitMQ с подтверждениями доставки и dead-letter очередью, Kafka-консьюмеры для фоновой обработки XML и Excel.
+- **Платежи.** Интегрировал ЮKassa, QIWI и Antilopay: проверка подписи webhook, идемпотентная обработка, статусы, сверка и возвраты.
+- **Интеграции и поддержка.** Работал с Telegram Bot API, Twitch OAuth/Helix и REST-обменом с 1С-Битрикс. Обновлял PHP и фреймворки, дорабатывал проекты на Yii2 и Joomla.
 
-[![Telegram](https://img.shields.io/badge/Telegram-@coderpool-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/coderpool)
-[![Setka](https://img.shields.io/badge/Сетка-профиль-1f1f1f?style=flat-square)](https://set.ki/account/LesE6Q2)
+## Технологии
+
+| Направление | Инструменты |
+| --- | --- |
+| Backend | PHP, Laravel, Symfony, Yii2, REST API, WebSocket |
+| Данные | MySQL, PostgreSQL, MongoDB, Redis |
+| Очереди | Laravel Queues, RabbitMQ, Apache Kafka |
+| Качество | PHPUnit, PHPStan / Larastan, Laravel Pint |
+| Инфраструктура | Docker, Linux, Nginx, PHP-FPM, GitHub Actions, Git |
+| Клиентская разработка | Vue 3, React, Next.js, TypeScript, Electron |
+
+## Связь
+
+Обсудить проект или работу: **[@coderpool](https://t.me/coderpool)** или **[cyrillnetyosov@yandex.ru](mailto:cyrillnetyosov@yandex.ru)**.
+
+Работаю удалённо; рассматриваю офис и гибрид в Москве и Санкт-Петербурге. Английский — B2.

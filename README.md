@@ -8,14 +8,15 @@
 
 ## GoydaCord — голосовой мессенджер
 
-Чаты, серверы, звонки и демонстрация экрана. Основной проект: бэкенд на Laravel, веб-клиент на Next.js, приложение на Electron.
+Чаты, серверы, звонки и демонстрация экрана. Основной проект: бэкенд на Laravel, веб-клиент на Next.js, приложение на Electron. В демо-входе без регистрации открывается готовый DayZ-сервер с переписками, друзьями и превью стрима.
 
 [**Открыть демо →**](https://goidacord.ru) · [Исходный код](https://github.com/coderpool-dev/goydacord-api) · [Архитектура](https://goidacord.ru/tech)
 
-[![Интерфейс GoydaCord: чаты и голосовые каналы](https://raw.githubusercontent.com/coderpool-dev/goydacord-api/main/docs/screenshots/app-demo.webp)](https://goidacord.ru)
+[![Интерфейс GoydaCord: DayZ-сервер, чат и превью стрима](https://raw.githubusercontent.com/coderpool-dev/goydacord-api/main/docs/screenshots/app-demo.webp?v=20260928)](https://goidacord.ru)
 
 - Авторизация по устройствам, иерархия ролей и права на уровне каналов
 - События в реальном времени через Laravel Reverb, голосовые комнаты на LiveKit
+- Демо-аккаунты с подготовленными участниками, чатами и превью демонстрации экрана
 - Загрузка файлов с докачкой
 - Бизнес-логика в сервисах; PHPUnit и PHPStan/Larastan
 

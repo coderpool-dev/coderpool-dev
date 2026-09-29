@@ -38,6 +38,16 @@
 
 [![Главный экран PREPISKA DayZ Launcher](https://raw.githubusercontent.com/coderpool-dev/dayz_launcher/main/docs/screenshots/01-home.png)](https://github.com/coderpool-dev/dayz_launcher)
 
+## Сайт Тамбовского филиала РосНОУ — Joomla
+
+Сайт вуза для абитуриентов, студентов и сотрудников: перенос на Joomla 6, настройка сервера, ускорение загрузки.
+
+[Сайт](https://tambov-rosnou.ru) · [Исходный код](https://github.com/coderpool-dev/joomla-university-website)
+
+<a href="https://github.com/coderpool-dev/joomla-university-website"><img src="https://raw.githubusercontent.com/coderpool-dev/joomla-university-website/main/docs/screenshots/homepage-preview.jpg" alt="Главная страница сайта Тамбовского филиала РосНОУ" width="480"></a>
+
+`PHP 8.3` · `Joomla 6` · `MySQL` · `Nginx`
+
 ## Коммерческий опыт
 
 - Сократил время формирования отчётов с **10 до 1,5 секунды** на таблицах с миллионами записей

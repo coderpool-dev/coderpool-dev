@@ -6,13 +6,13 @@
 
 [Telegram ↗](https://t.me/coderpool) · [Email ↗](mailto:cyrillnetyosov@yandex.ru)
 
-## GoydaCord — голосовой мессенджер
+## SonetCord — голосовой мессенджер
 
 Чаты, серверы, звонки и демонстрация экрана. Основной проект: бэкенд на Laravel, веб-клиент на Next.js, приложение на Electron. В демо-входе без регистрации открывается готовый DayZ-сервер с переписками, друзьями и превью стрима.
 
-[**Открыть демо →**](https://goidacord.ru) · [Исходный код](https://github.com/coderpool-dev/goydacord-api) · [Архитектура](https://goidacord.ru/tech)
+[**Открыть демо →**](https://sonetcord.ru) · [Исходный код](https://github.com/coderpool-dev/goydacord-api) · [Архитектура](https://sonetcord.ru/tech)
 
-[![Интерфейс GoydaCord: DayZ-сервер, чат и превью стрима](https://raw.githubusercontent.com/coderpool-dev/goydacord-api/main/docs/screenshots/app-demo.webp?v=20260928)](https://goidacord.ru)
+[![Интерфейс SonetCord: DayZ-сервер, чат и превью стрима](https://raw.githubusercontent.com/coderpool-dev/goydacord-api/main/docs/screenshots/app-demo.webp?v=20260928)](https://sonetcord.ru)
 
 - Авторизация по устройствам, иерархия ролей и права на уровне каналов
 - События в реальном времени через Laravel Reverb, голосовые комнаты на LiveKit
@@ -26,7 +26,7 @@
 
 Сервис для игроков DayZ: каталог ~20 тыс. серверов, админка со статистикой и выпуском обновлений, клиент для Windows.
 
-[Сайт](https://dayz.goidacord.ru) · [Исходный код](https://github.com/coderpool-dev/dayz_launcher)
+[Сайт](https://dayz.sonetcord.ru) · [Исходный код](https://github.com/coderpool-dev/dayz_launcher)
 
 - **Symfony 7.4 LTS, Doctrine, EasyAdmin:** API, админка со статистикой использования, управлением спонсорскими серверами и загрузкой новых версий
 - **Производительность:** список серверов из внешних источников обновляется по cron под блокировкой, при недоступности источника отдаётся последний удачный снимок. Готовый ответ собирается раз в минуту и отдаётся файлом — раньше каждый запрос декодировал ~20 МБ JSON и упирался в лимит памяти PHP-FPM

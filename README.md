@@ -18,6 +18,8 @@ SonetCord объединяет личные и групповые чаты, го
 
 [**Попробовать демо**](https://sonetcord.ru) · [Код](https://github.com/coderpool-dev/sonetcord-api) · [Техническое описание](https://sonetcord.ru/tech)
 
+[<img src="https://raw.githubusercontent.com/coderpool-dev/sonetcord-api/main/docs/screenshots/app-demo.webp?v=20260928" alt="Интерфейс SonetCord: чат и демонстрация экрана" width="680">](https://sonetcord.ru)
+
 На серверной стороне:
 
 - **Права доступа.** Разрешения канала вычисляются с учётом ролей, запретов и персональных настроек. Проверки выполняются на сервере; управление участниками ограничено иерархией ролей.
@@ -27,18 +29,13 @@ SonetCord объединяет личные и групповые чаты, го
 
 Начать знакомство с кодом можно с [загрузки файлов](https://github.com/coderpool-dev/sonetcord-api/blob/main/app/Services/Uploads/UploadService.php) и [расчёта прав канала](https://github.com/coderpool-dev/sonetcord-api/blob/main/app/Services/Servers/ServerChannelPermissionResolver.php).
 
-<details>
-<summary>Посмотреть интерфейс</summary>
-
-[![Интерфейс SonetCord: чат и демонстрация экрана](https://raw.githubusercontent.com/coderpool-dev/sonetcord-api/main/docs/screenshots/app-demo.webp?v=20260928)](https://sonetcord.ru)
-
-</details>
-
 ## PREPISKA DayZ Launcher — API на Symfony и клиент для Windows
 
 Разрабатываю API на Symfony и Windows-клиент на C#. Лаунчер собирает каталог игровых серверов из внешних источников, помогает установить моды и подключиться к игре. На серверной стороне — каталог, статистика клиентов, управление спонсорскими размещениями и версиями приложения.
 
 [Сайт и загрузка](https://dayz.sonetcord.ru) · [Код и описание устройства проекта](https://github.com/coderpool-dev/dayz_launcher)
+
+[<img src="https://raw.githubusercontent.com/coderpool-dev/dayz_launcher/main/docs/screenshots/01-home.png" alt="Главный экран PREPISKA DayZ Launcher" width="680">](https://github.com/coderpool-dev/dayz_launcher)
 
 - **Выдача каталога.** Полный список серверов собирается заранее и отдаётся готовым файлом. Если источники не вернули ни одного сервера, используется предыдущий снимок; во время сбоя данные могут быть устаревшими.
 - **Совместимость клиентов.** Перенёс серверную часть с процедурного PHP на Symfony с сохранением формата API для уже установленных лаунчеров.

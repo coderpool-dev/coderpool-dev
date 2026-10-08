@@ -44,7 +44,7 @@
 
 [Сайт](https://tambov-rosnou.ru) · [Исходный код](https://github.com/coderpool-dev/joomla-university-website)
 
-<a href="https://github.com/coderpool-dev/joomla-university-website"><img src="https://raw.githubusercontent.com/coderpool-dev/joomla-university-website/main/docs/screenshots/homepage-preview.jpg" alt="Главная страница сайта Тамбовского филиала РосНОУ" width="480"></a>
+[![Главная страница Тамбовского филиала РосНОУ: посвящение в студенты](assets/university-homepage.png)](https://github.com/coderpool-dev/joomla-university-website)
 
 `PHP 8.3` · `Joomla 6` · `MySQL` · `Nginx`
 
